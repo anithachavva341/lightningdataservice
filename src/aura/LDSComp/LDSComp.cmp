@@ -10,5 +10,5 @@
 		targetError="{!v.recordError}"
 		layoutType="FULL"
 		/>
-	<lightning:card title="{!v.recordFields.Name}" />
+	<lightning:card title="{!v.recordFields.FirstName +' '+ v.recordFields.LastName}" />
 </aura:component>
