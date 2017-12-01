@@ -2,7 +2,7 @@
 	<aura:attribute name="record" type="Object" />
 	<aura:attribute name="recordFields" type="Object" />
 	<aura:attribute name="recordError" type="String" />
-	<force:recordData 
+	<force:recordData
 		aura:id="recordEdit"
 		recordId="{!v.recordId}"
 		targetRecord="{!v.record}"
