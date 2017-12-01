@@ -5,6 +5,7 @@
 	            var resultsToast = $A.get("e.force:showToast");
 	            resultsToast.setParams({
 	                "title": "Saved",
+                    "type": "success",
 	                "message": "The record saved Successfully"
 	            });
 	            resultsToast.fire();            	
