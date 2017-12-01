@@ -1,0 +1,14 @@
+<aura:component implements="flexipage:availableForRecordHome, force:lightningQuickActionWithoutHeader, force:hasRecordId">
+	<aura:attribute name="record" type="Object"/>
+	<aura:attribute name="recordFields" type="Object"/>
+	<aura:attribute name="recordError" type="String"/>
+	<force:recordData 
+		aura:id="recordLoader"
+		recordId="{!v.recordId}"
+		targetRecord="{!v.record}"
+		targetFields="{!v.recordFields}"
+		targetError="{!v.recordError}"
+		layoutType="FULL"
+		/>
+	<lightning:card title="{!v.recordFields.Name}" />
+</aura:component>
