@@ -1,0 +1,13 @@
+<aura:component implements="flexipage:availableForRecordHome, force:lightningQuickActionWithoutHeader, force:hasRecordId">
+	<force:recordData 
+		aura:id="recordDelete"
+		recordId="{!v.recordId}"
+		fields="Id"
+		targetError="{!v.recordError}"
+	/>	
+	<lightning:card title="Delete Record">
+		<p class="slds-p-horizontal_small">
+			<center><lightning:button variant="destructive" label="Click me to Delete Record" onclick="{!c.handleDelete}"></lightning:button></center>
+		</p>
+	</lightning:card>
+</aura:component>
