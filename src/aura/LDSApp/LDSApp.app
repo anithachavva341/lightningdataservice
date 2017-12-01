@@ -1,3 +1,3 @@
 <aura:application extends="force:slds">
-    <c:LDSComp recordId="0017F000009csczQAA" />
+    <c:LDSComp recordId="00Q7F000002HGGBUA4" />
 </aura:application>
