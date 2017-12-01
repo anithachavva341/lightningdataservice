@@ -1,0 +1,28 @@
+<aura:component implements="flexipage:availableForRecordHome,force:lightningQuickActionWithoutHeader,force:hasRecordId">
+	<aura:attribute name="record" type="Object" />
+	<aura:attribute name="recordFields" type="Object" />
+	<aura:attribute name="recordError" type="String" />
+	<force:recordData
+		aura:id="recordEdit"
+		recordId="{!v.recordId}"
+		targetRecord="{!v.record}"
+		targetFields="{!v.recordFields}"
+		targetError="{!v.recordError}"
+		layoutType="FULL"
+		mode="EDIT"
+		/>
+	<lightning:card title="Edit Record">
+		<p class="slds-p-horizontal_small">
+			<lightning:Input label="First Name" name="name" value="{!v.recordFields.FirstName}"  />
+		</p>
+		<p class="slds-p-horizontal_small">
+			<lightning:Input label="Last Name" name="name" value="{!v.recordFields.LastName}"  />
+		</p>
+		<p class="slds-p-horizontal_small">
+			<br />
+			<center>
+				<lightning:button variant="brand" label="Save" onclick="{!c.handleSave}" ></lightning:button>
+			</center>
+		</p>
+	</lightning:card>
+</aura:component>
