@@ -1,5 +1,3 @@
-<aura:component >
-    <c:LDSComp recordId="00Q7F000002HGGBUA4" />
-    <c:LDSCompEdit recordId="00Q7F000002HGGBUA4" />
-    <c:LDSCompDelete recordId="00Q7F000002HGGBUA4" />
+<aura:component implements="flexipage:availableForRecordHome, force:lightningQuickActionWithoutHeader, force:hasRecordId">
+    <c:LDSComp recordId="{!v.recordId}" />
 </aura:component>
