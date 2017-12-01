@@ -1,4 +1,4 @@
-<aura:component implements="flexipage:availableForRecordHome,force:lightningQuickActionWithoutHeader,force:hasRecordId">
+<aura:component implements="flexipage:availableForRecordHome, force:lightningQuickActionWithoutHeader, force:hasRecordId">
 	<aura:attribute name="record" type="Object" />
 	<aura:attribute name="recordFields" type="Object" />
 	<aura:attribute name="recordError" type="String" />

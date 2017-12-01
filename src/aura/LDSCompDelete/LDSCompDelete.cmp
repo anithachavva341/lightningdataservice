@@ -1,5 +1,5 @@
 <aura:component implements="flexipage:availableForRecordHome, force:lightningQuickActionWithoutHeader, force:hasRecordId">
-	<force:recordData 
+	<force:recordData
 		aura:id="recordDelete"
 		recordId="{!v.recordId}"
 		fields="Id"
