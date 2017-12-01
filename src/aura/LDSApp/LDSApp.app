@@ -1,5 +1,5 @@
 <aura:application extends="force:slds">
-    <c:LDSComp recordId="00Q7F000002HGG6UAO" />
-    <c:LDSCompEdit recordId="00Q7F000002HGG6UAO" />
-    <c:LDSCompDelete recordId="00Q7F000002HGG6UAO" />
+    <c:LDSComp recordId="00Q7F000002HGGBUA4" />
+    <c:LDSCompEdit recordId="00Q7F000002HGGBUA4" />
+    <c:LDSCompDelete recordId="00Q7F000002HGGBUA4" />
 </aura:application>
