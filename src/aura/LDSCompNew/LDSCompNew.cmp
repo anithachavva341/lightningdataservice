@@ -1,0 +1,29 @@
+<aura:component implements="flexipage:availableForRecordHome,force:lightningQuickActionWithoutHeader">
+	<aura:attribute name="record" type="Object" />
+	<aura:attribute name="recordFields" type="Object" />
+	<aura:attribute name="recordError" type="String" />
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+	<force:recordData aura:id="recordCreate"
+		targetRecord="{!v.record}"
+		targetFields="{!v.recordFields}"
+		targetError="{!v.recordError}"
+		layoutType="FULL"
+		/>
+	<lightning:card title="Create New Lead">
+		<p class="slds-p-horizontal_small">
+			<lightning:Input label="First Name" name="name" value="{!v.recordFields.FirstName}"  />
+		</p>
+		<p class="slds-p-horizontal_small">
+			<lightning:Input label="Last Name" name="name" value="{!v.recordFields.LastName}"  />
+		</p>
+		<p class="slds-p-horizontal_small">
+			<lightning:Input label="Company" name="company" value="{!v.recordFields.Company}"  />
+		</p>
+		<p class="slds-p-horizontal_small">
+			<br />
+			<center>
+				<lightning:button variant="brand" label="Save" onclick="{!c.handleSave}" ></lightning:button>
+			</center>
+		</p>
+	</lightning:card>
+</aura:component>
