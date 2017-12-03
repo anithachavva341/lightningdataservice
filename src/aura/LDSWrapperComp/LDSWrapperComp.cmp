@@ -2,4 +2,5 @@
     <c:LDSComp recordId="{!v.recordId}" />
     <c:LDSCompEdit recordId="{!v.recordId}" />
     <c:LDSCompDelete recordId="{!v.recordId}" />
+    <c:LDSCompNew />
 </aura:component>
